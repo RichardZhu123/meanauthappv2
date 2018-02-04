@@ -40,7 +40,7 @@ const appRoutes: Routes = [
     FormsModule,
     HttpModule,
     RouterModule.forRoot(appRoutes),
-    FlashMessagesModule
+    FlashMessagesModule.forRoot()
   ],
   providers: [ValidateService, AuthService, AuthGuard],
   bootstrap: [AppComponent]
